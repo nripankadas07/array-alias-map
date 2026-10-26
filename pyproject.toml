@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools==84.2.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "array-alias-map"
+version = "0.1.0"
+description = "Explain which coordinates share storage across NumPy slices, transposes, reshapes and copies."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+dependencies = ["numpy==2.5.4"]
+
+[project.scripts]
+array-alias-map = "array_alias_map:main"
+
+[tool.setuptools]
+py-modules = ["array_alias_map"]

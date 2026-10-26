@@ -1,0 +1,1 @@
+{"shape":[3,4],"views":[{"name":"reverse","operations":[{"op":"slice","axes":[[null,null,-1],[null,null,2]]}]},{"name":"transpose","source":"reverse","operations":[{"op":"transpose","axes":[1,0]}]},{"name":"copy","source":"transpose","operations":[{"op":"copy"}]}],"mutation":{"view":"transpose","coordinate":[1,0]}}
